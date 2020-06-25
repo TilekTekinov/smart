@@ -1,0 +1,750 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
+    <link rel="icon" href="/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="header">
+          <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+              <div class="logo">
+                <img src="{% static 'img/logo.png' %}" alt="smart_logo" />
+              </div>
+            </div>
+
+            <div
+              class="col-lg-2 offset-lg-4 col-md-4 offset-md-2 col-sm-4 offset-sm-0 text-right col-xs-12"
+            >
+              <div class="phone_block">
+                <a class="phone_link" href="#">+996 559 244 547</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4 text-right col-xs-12">
+              <div class="wrap">
+                <div class="wrap_block">
+                  <a class="button popup-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Оборудовать дом
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="row">
+            <div class="col-md-7 col-lg-6 col-sm-12">
+              <div class="main_title wow fadeInLeft">
+                <h1>Умный дом</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  <br />Recusandae accusamus ratione perferendis rem unde magni
+                  <br />quod optio harum, accusantium dicta.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-8 offset-sm-2">
+              <div class="main-form wow fadeInRight">
+                <h2 class="main-form-header">Подключитесь прямо сейчас</h2>
+                <form action="#">
+                  <label for="#">ФИО</label>
+                  <input class="main-form-input" required type="text" />
+                  
+                  <label for="#">Адрес</label>
+                  <input class="main-form-input" required type="text" />
+                  <label for="#">Номер телефона</label>
+                  <input class="main-form-input" id="phone" required type="text" />
+                  <button class="main-form-btn button" type="submit">
+                    Оставить заявку
+                  </button>
+                </form>
+                <!-- <form action="" class="box">
+                  <input type="text" placeholder="Username">
+                  <input type="text" placeholder="Adress">
+                  <input type="text" placeholder="Phone">
+                  <input type="submit" name="" value="Connection">
+                </form> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <section class="smart-slider">
+      <div class="smart-slider-container">
+        <div class="slide-circle circle1"></div>
+        <div class="slide-circle circle2"></div>
+        <div class="slide-circle circle3"></div>
+      </div>
+    </section> -->
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-header">
+          Приемущества работы с нами
+        </h2>
+        <div class="features-slider">
+          <div class="features-block wow fadeInUp" data-wow-delay="0.1s">
+            <div class="features-img">
+              <picture>
+                <source srcset="{% static 'img/futures/coin.png' %}" type="image/" />
+                <img
+                  class="coin"
+                  src="{% static 'img/futures/coin.png' %}"
+                  alt="Платите по факту"
+                />
+              </picture>
+            </div>
+            <h3>Платите по факту</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+              Repellat earum eveniet, provident dolorum a dolor.
+            </p>
+          </div>
+          <div class="features-block wow fadeInUp" data-wow-delay="0.2s">
+            <div class="features-img">
+              <picture>
+                <source srcset="{% static 'img/futures/time.png' %}" type="image/" />
+                <img src="img/futures/time.png" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Платите по факту</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+              Repellat earum eveniet, provident dolorum a dolor.
+            </p>
+          </div>
+          <div class="features-block wow fadeInUp" data-wow-delay="0.3s">
+            <div class="features-img">
+              <picture>
+                <source srcset="img/futures/folder.png" type="image/" />
+                <img src="img/futures/folder.png" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Платите по факту</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+              Repellat earum eveniet, provident dolorum a dolor.
+            </p>
+          </div>
+          <div class="features-block wow fadeInUp" data-wow-delay="0.4s">
+            <div class="features-img">
+              <picture>
+                <source srcset="img/futures/pigsi.png" type="image/" />
+                <img src="img/futures/pigsi.png" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Платите по факту</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+              Repellat earum eveniet, provident dolorum a dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <div class="section-header">
+          <h2>Отзывы</h2>
+        </div>
+
+        <div class="feedback-slider">
+          <div class="feedback-slider_item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="fotorama">
+                  <div class="photo-slider_item">
+                    <img src="img/slide5.jpeg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide1.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide2.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="profile">
+                  <h4>Александр Невский</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore quaerat dolorum ipsam at optio, hic doloribus, nobis
+                    necessitatibus tenetur ea voluptatum molestias, unde
+                    adipisci cum dignissimos dolor debitis ipsum non.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-slider_item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="fotorama">
+                  <div class="photo-slider_item">
+                    <img src="img/slide5.jpeg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide1.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide2.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="profile">
+                  <h4>Александр Невский</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore quaerat dolorum ipsam at optio, hic doloribus, nobis
+                    necessitatibus tenetur ea voluptatum molestias, unde
+                    adipisci cum dignissimos dolor debitis ipsum non.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-slider_item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="fotorama">
+                  <div class="photo-slider_item">
+                    <img src="img/slide5.jpeg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide1.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide2.jpg" alt="" />
+                  </div>
+                  <div class="photo-slider_item">
+                    <img src="img/slide4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="profile">
+                  <h4>John Aibekov</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident suscipit ratione excepturi eligendi voluptate rem
+                    velit debitis laboriosam nobis aliquam, sed natus expedita
+                    magnam iure quisquam necessitatibus? Veritatis libero
+                    commodi a corrupti magni aliquam nemo excepturi soluta
+                    officiis! Aliquam praesentium aspernatur maiores iure eum
+                    corrupti aperiam ducimus? Facere, nostrum quos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="section-header section-header_light">
+              <h2>Цены</h2>
+              <p>Выберите вариант, который подходит Вам:</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-xs-8 offset-xs-2">
+            <div class="price-block wow fadeInUp" data-wow-delay="0.1s">
+              <h4>Минимум</h4>
+              <img class="price-img" src="img/slide5.jpg" alt="" />
+             
+              <ul class="price-list">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <button class="button">Заказать</button>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-xs-8 offset-xs-2">
+            <div class="price-block wow fadeInUp" data-wow-delay="0.2s">
+              <h4>Супер</h4>
+              <img class="price-img" src="img/slide11.webp" alt="" />
+              
+              <ul class="price-list">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <button class="button">Заказать</button>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-xs-8 offset-xs-2">
+            <div class="price-block wow fadeInUp" data-wow-delay="0.3s">
+              <h4>Про</h4>
+              <img class="price-img" src="img/slide5.jpeg" alt="" />
+             
+              <ul class="price-list">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <button class="button">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scheme">
+      <div class="container">
+        <div class="section-header">
+          <h2>Схема работы</h2>
+          <p>Схема работы над вашим объектом будет включать в себя 3 этапа:</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="wow bounceInLeft">
+              <img src="img/1.png" alt="" />
+              <h3>Договор</h3>
+              <p>Составление договора, согласованным с вами</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="wow bounceInUp">
+              <img src="img/3.png" alt="" />
+              <h3>Установка</h3>
+              <p>Доставка материалов и оборудования и начало работы</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="wow bounceInRight">
+              <img src="img/2 20.png" alt="" />
+              <h3>Завершение</h3>
+              <p>После окончания работ тест, проверка качества и эксплуатация</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-iclusive">
+      <div class="container">
+        <div class="section-header section-header_active">
+          <h2>
+            Всё на 100% включено
+          </h2>
+          <p>При выполнении работ с нашим материалом в стоимость входит:</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    1
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Материал:</h4>
+                <p>Датчики, модули, реле и всё необходимое оборудование</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    2
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Доставка оборудования и материала на объект</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    3
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Подготовка объекта</h4>
+                <p>Стены, потолки, пол</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    4
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Установка датчиков</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    4
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Заголовок</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, sed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    1
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Заголовок</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    1
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Заголовок</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                  enim.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="media">
+              <div class="media-left">
+                <span class="circle-border">
+                  <span class="circle">
+                    1
+                  </span>
+                </span>
+              </div>
+              <div class="media-body">
+                <h4>Заголовок</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="materials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Оборудование</h2>
+          <p>У нас вы можете приобрести необходимое оборудование</p>
+        </div>
+        <div class="features-slider">
+          <div class="features-block">
+            <div class="materials-img">
+              <picture>
+                <!-- <source srcset="img/futures/coin.png" type="image/" /> -->
+                <img class="coin" src="img/m1.jpg" alt="Платите по факту"/>
+              </picture>
+            </div>
+            <h3>Датчик движения</h3>
+            <p>
+              T-800
+            </p>
+            <p class="cost">
+              <strong>1000</strong> сом
+            </p>
+          </div>
+          <div class="features-block">
+            <div class="materials-img">
+              <picture>
+                <!-- <source srcset="img/futures/time.png" type="image/" /> -->
+                <img src="img/m2.png" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Датчик Газа</h3>
+            <p>
+              WZ-111 Model 5A
+            </p>
+            <p class="cost">
+              <strong>1000</strong> сом
+            </p>
+          </div>
+          <div class="features-block">
+            <div class="materials-img">
+              <picture>
+                <!-- <source srcset="img/futures/folder.png" type="image/" /> -->
+                <img src="img/m3.jpg" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Датчик лампочки</h3>
+            <p>
+             ВимБильДан 2000
+            </p>
+            <p class="cost">
+              <strong>1000</strong> сом
+            </p>
+          </div>
+          <div class="features-block">
+            <div class="materials-img">
+              <picture>
+                <!-- <source srcset="img/futures/pigsi.png" type="image/" /> -->
+                <img src="img/m4.jpg" alt="Платите по факту" />
+              </picture>
+            </div>
+            <h3>Датчик Влажности</h3>
+            <p>
+              Xiaomi Mi band 2
+            </p>
+            <p class="cost">
+              <strong>1000</strong> сом
+            </p>
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          <h3>Контакты</h3>
+          <p>Наш адрес: <strong> город Бишкек улица Шорса 245/2</strong></p>
+          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.7831490113044!2d74.57318001547137!3d42.835194279157896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9ebd50abdf1%3A0x14ce488dddb2fbdb!2z0JrRi9GA0LPRi9C30YHQutC-LdCi0YPRgNC10YbQutC40Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiAi0JzQsNC90LDRgSI!5e0!3m2!1sru!2skg!4v1587290059634!5m2!1sru!2skg" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+          <p>Номер телефона: <strong>+996 706 244 547</strong></p>
+          <p>E-mail: <a class="contacts-link" href="kia27111996@gmail.com">kia27111996@gmail.com</a></p>
+        </div>
+          <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1 col-sm-8 offset-sm-2 col-xs-6 offset-xs-4">
+            <div class="main-form">
+              <h2 class="main-form-header box">Подключитесь прямо сейчас</h2>
+                <form action="#">
+                  <label for="#">ФИО</label>
+                  <input class="main-form-input" required type="text" />
+                  
+                  <label for="#">Адрес</label>
+                  <input class="main-form-input" required type="text" />
+                  <label for="#">Номер телефона</label>
+                  <input class="main-form-input" id="phone" required type="text" />
+                  <button class="main-form-btn button" type="submit">
+                    Оставить заявку
+                  </button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="logo">
+              <img src="img/logo.png" alt="smart_logo" />
+            </div></div>
+          <div class="col-md-4"> 
+            <div class="footer-contacts">          
+              <p><strong>+996 706 244 547</strong></p>
+              <a class="contacts-link" href="kia27111996@gmail.com">kia27111996@gmail.com</a>
+              <p>Пн-ПТ: с 9:00 до 18:00</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-dev">
+              <img src="img/logo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="popup">
+      <!-- white modal window -->
+      <div class="popup-dialog">
+        <div class="popup-content">
+          <button class="popup-close">&times</button>
+         
+          <h2 class="main-form-header">Подключитесь прямо сейчас</h2>
+            <form action="#">
+              <label for="#">ФИО</label>
+              <input class="main-form-input" required type="text" />
+              
+              <label for="#">Адрес</label>
+              <input class="main-form-input" required type="text" />
+              <label for="#">Номер телефона</label>
+              <input class="main-form-input" id="phone" required type="text" />
+              <button class="main-form-btn button" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
+    <!-- Slick library -->
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+      jQuery(function($){
+      // $("#date").mask("99/99/9999");
+      $("#phone").mask("+999 (999) 999-999");
+      // $("#tin").mask("99-9999999");
+      // $("#ssn").mask("999-99-9999");
+      });
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".popup-btn").click(function (event) {
+          event.preventDefault();
+          $(".popup").show();
+        });
+
+        $(".popup-close").click(function (event) {
+          event.preventDefault();
+          $(".popup").hide();
+        });
+
+        $(".feedback-slider").slick({});
+
+        $(".features-slider").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            // {
+            //   breakpoint: 1024,
+            //   settings: {
+            //     slidesToShow: 4,
+            //     slidesToScroll: 1,
+            //     infinite: true
+            //     // dots: true
+            //   }
+            // },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
